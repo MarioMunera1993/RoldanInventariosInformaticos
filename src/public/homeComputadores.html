@@ -1,25 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Inventario Tecnológico Roldán</title>
 </head>
+
 <body>
     <header class="encabezado">
         <div class="enc-conten">
-            <img src="./src/assets/images/logo.png" alt="Logo Roldan" class="enc-conten__logo">
-            <h1 class="enc-conten__titulo">Inventario Tecnológico Roldán</h1>
+            <img src="../assets/images/logo.png" alt="Logo Roldan" class="enc-conten__logo">
+            <h1 class="enc-conten__titulo">Home Computadores</h1>
         </div>
     </header>
-    <aside class="barra-lateral">
+    <div class="contenedor-principal">
+        <aside class="barra-lateral">
+            <nav class="barra-lateral__nav">
+                <ul class="barra-lateral__lista">
+                    <li>
+                        <a href="./homePrincipal.html" class="barra-lateral__enlace">
+                            <span class="material-icons">home</span>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./homeImpresoras.html" class="barra-lateral__enlace">
+                            <span class="material-icons">print</span>
+                            <span>Impresoras</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./homeTelefonos.html" class="barra-lateral__enlace">
+                            <span class="material-icons">call</span>
+                            <span>Telefonos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="barra-lateral__enlace">
+                            <span class="material-icons">bar_chart</span>
+                            <span>Reportes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="barra-lateral__enlace">
+                            <span class="material-icons">settings</span>
+                            <span>Configuración</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="contenido-principal">
+            <div>
+                <table id="dataTable" class="contenido-principal__tabla">
+                    <thead class="tabla-header">
+                        <tr>
+                            <th class="titulos-tabla">Placa Computador</th>
+                            <th class="titulos-tabla">Marca</th>
+                            <th class="titulos-tabla">Modelo</th>
+                            <th class="titulos-tabla">Número Serial</th>
+                            <th class="titulos-tabla">Sistema Operativo</th>
+                            <th class="titulos-tabla">Procesador</th>
+                            <th class="titulos-tabla">Discos Duros</th>
+                            <th class="titulos-tabla">Memorias RAM</th>
+                            <th class="titulos-tabla">MAC Local</th>
+                            <th class="titulos-tabla">MAC WiFi</th>
+                            <th class="titulos-tabla">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-body">
+                        <!--Ejemplo de fila de datos-->
+                        <tr>
+                            <td>PC-001</td>
+                            <td>Dell</td>
+                            <td>Inspiron 15</td>
+                            <td>SN123456789</td>
+                            <td>Windows 10</td>
+                            <td>Intel Core i5</td>
+                            <td>512GB SSD</td>
+                            <td>8GB</td>
+                            <td>00:1A:2B:3C:4D:5E</td>
+                            <td>00:1A:2B:3C:4D:5F</td>
+                            <td>
+                                <button class="btn-editar">Editar</button>
+                                <button class="btn-eliminar">Eliminar</button>
+                            </td>
+                        </tr>
+                        <!-- Los datos se agregarán dinámicamente mediante JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
 
-    </aside>
-    <main class="contenido-principal">
-
-    </main>
     <footer class="pie-de-pagina">
-        <p>© 2026 Inventario Tecnológico Roldán. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Inventario Tecnológico Roldán. Todos los derechos reservados.</p>
     </footer>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </body>
+
 </html>

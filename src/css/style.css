@@ -85,6 +85,22 @@ header, footer {
     transition: all 0.3s ease;
 }
 
+.contenido-principal {
+    flex: 1;
+    padding: 20px;
+}
+
+.contenido-principal__tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.titulos-tabla {
+    background: var(--color-primary);
+    color: #fff;
+}
+
 .pie-de-pagina {
     text-align: center;
     padding: 9px 20px;
